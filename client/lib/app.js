@@ -1,0 +1,1 @@
+angular.module('angular_meteor',['angular-meteor', 'ui.router']);
