@@ -1,9 +1,11 @@
+ <label>Public</label>
+<input type="checkbox" ng-model="newParty.public">
  <form>
       <label>Name</label>
       <input ng-model="newParty.name">
       <label>Description</label>
       <input ng-model="newParty.description">
-      <button ng-click="parties.push(newParty)">Add</button>
+      <button ng-click="newParty.owner=$root.currentUser._id; parties.push(newParty)">Add</button>
     </form>
     <ul>
       <li ng-repeat="party in parties">

@@ -1,13 +1,21 @@
 <head>
   <base href="/">
 </head>
+
 <body>
 
-  <div ng-app="angular_meteor">
-    <h1>
-      <a href="/parties">Home</a>
-    </h1>
-    <div ui-view></div>
-  </div>
+    <div ng-app="angular_meteor">
+      <header class="navbar navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <h1>
+              <a href="/parties">Home</a>
+            </h1>
+          </div>
+          <meteor-include src="loginButtons"></meteor-include>
+        </div>
+      </header>
+      <div ui-view class="container"></div>
+    </div>
 
-</body>
+    </body>
