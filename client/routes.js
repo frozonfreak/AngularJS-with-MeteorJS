@@ -6,12 +6,12 @@ angular.module("angular_meteor").config(['$urlRouterProvider', '$stateProvider',
     $stateProvider
       .state('parties', {
         url: '/parties',
-        templateUrl: 'client/parties/views/parties-list.tpl',
+        templateUrl: 'client/parties/partials/parties-list.tpl',
         controller: 'PartiesListCtrl'
       })
       .state('partyDetails', {
         url: '/parties/:partyId',
-        templateUrl: 'client/parties/views/party-details.tpl',
+        templateUrl: 'client/parties/partials/party-details.tpl',
         controller: 'PartyDetailsCtrl'
       });
 
